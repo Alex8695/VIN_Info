@@ -11,14 +11,14 @@ namespace VIN_Info.Model
 		public string As_String {
 			get {
 				return (isValid)
-					? this.chars.ToString()
+					? new string(this.chars)
 					: string.Empty;
 			}
 		}
 		public int As_Int {
 			get {
 				return (isValid) 
-					? int.Parse(chars.ToString()) 
+					? int.Parse(new string(chars)) 
 					: 0; } }
 
 		private char[] chars;
@@ -30,7 +30,7 @@ namespace VIN_Info.Model
 				? false 
 				: serial_str.Length == 6;
 
-			if (isValid)
+			if (is_valid)
 			{
 				chars =
 					serial_str

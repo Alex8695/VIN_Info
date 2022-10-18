@@ -19,7 +19,7 @@ namespace VIN_Info
 		#region OBJECT PUBLIC
 
 		public bool Is_Valid { get { return isValid; } }
-		public string VIN { get { return vin.ToString(); } }
+		public string VIN { get { return new string(vin); } }
 
 		/// <summary>
 		/// Vehicle Make
@@ -62,7 +62,7 @@ namespace VIN_Info
 		/// Digits 10
 		/// </summary>
 		/// 
-		public string ModelYear { get { return new string(vin, 9, 1); } }
+		public MY ModelYear { get { return modelYear; } }
 
 		/// <summary>
 		/// Vehicle Assembly Plant

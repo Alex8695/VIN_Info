@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIN_Info", "VIN_Info\VIN_In
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "REF", "REF", "{E97F7B7A-F3A1-4136-8040-3A08A7884E53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestVin", "UnitTestVin\UnitTestVin.csproj", "{EC15212B-6373-4715-B95D-079FC1E0589E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{A23E99BB-7690-4078-B701-511D027A8C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A23E99BB-7690-4078-B701-511D027A8C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A23E99BB-7690-4078-B701-511D027A8C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC15212B-6373-4715-B95D-079FC1E0589E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC15212B-6373-4715-B95D-079FC1E0589E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC15212B-6373-4715-B95D-079FC1E0589E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC15212B-6373-4715-B95D-079FC1E0589E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
