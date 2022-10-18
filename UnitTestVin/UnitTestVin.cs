@@ -247,7 +247,58 @@ namespace UnitTestVin
 
 		}
 
+		[TestMethod]
+		public void Test_null()
+		{											 
+			VinInfo _vi = new VinInfo(null);
+			bool OK = _vi.VIN=="*****************";
+
+			Debug.WriteLine($"Null Returned: {_vi.VIN}");
+
+			Assert.IsTrue(OK);
+
+		}
+
+		[TestMethod]
+		public void Test_empty()
+		{
+			VinInfo _vi = new VinInfo(null);
+			bool OK = _vi.VIN == "*****************";
+
+			Debug.WriteLine($"Empty Returned: {_vi.VIN}");
+
+			Assert.IsTrue(OK);
+
+		}
 
 
+
+		[TestMethod]
+		public void Test_VIN_In_Text()
+		{
+			string testVin = "This Vin, WA1LHAF72JD123456, is in \nsome text";
+			VinInfo _vi = new VinInfo(testVin);
+			bool OK = _vi.VIN == "WA1LHAF72JD123456";
+
+			Debug.WriteLine($"Given: {testVin}"
+				+ $"\n\t {_vi.VIN}");
+
+			Assert.IsTrue(OK);
+
+		}
+
+		[TestMethod]
+		public void Test_VIN_multiple()
+		{
+			string testVin = "WA1LHAF72JD123456,WA1LHAF72JD123457";
+			VinInfo _vi = new VinInfo(testVin);
+			bool OK = _vi.VIN == "WA1LHAF72JD123456";
+
+			Debug.WriteLine($"Given: {testVin}"
+				+ $"\n\t {_vi.VIN}");
+
+			Assert.IsTrue(OK);
+
+		}
 	}
 }

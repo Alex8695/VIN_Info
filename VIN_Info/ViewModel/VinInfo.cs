@@ -127,6 +127,15 @@ namespace VIN_Info
 			this.isValid =
 				_isSerialNumberValid && _isModelYearValid;
 
+			if(!this.isValid)
+			{
+				vin = 
+					Enumerable.Repeat(
+						element:'*', 
+						count: 17)
+						.ToArray();			 
+			}
+
 
 		}
 
